@@ -1,0 +1,31 @@
+{
+  "name": "parsfy",
+  "version": "0.0.0",
+  "description": "Parse JSON structure properly.",
+  "main": "parsfy.deploy.js",
+  "support": "parsfy.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "parse",
+    "json",
+    "structure",
+    "properly",
+    "parsfy"
+  ],
+  "homepage": "https://github.com/volkovasystems/parsfy",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.20.0",
+    "circular-json": "^0.3.1",
+    "protype": "^0.22.0"
+  }
+}

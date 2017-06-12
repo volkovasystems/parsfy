@@ -1,8 +1,31 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<script
-			type="application/javascript"
-			src="./parsfy.deploy.js">
-		</script>
-	</head>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Parsfy QUnit test</title>
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+	<script type="application/javascript" src="./parsfy.deploy.js"></script>
+</head>
+
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script>
+		QUnit.test( "equal test", function( assert ) {
+
+			assert.deepEqual( parsfy( "{}" ), {}, "should be equal" );
+
+			assert.equal( parsfy( 1 ), 1, "should be equal" );
+
+			assert.equal( parsfy( false ), false, "should be equal" );
+
+			assert.deepEqual( parsfy( JSON.stringify( { "hello": "world" } ) ), { "hello": "world" }, "should be equal" );
+
+		} );
+	</script>
+</body>
+
 </html>

@@ -1,33 +1,33 @@
 {
-  "name": "parsfy",
-  "version": "0.2.0",
-  "description": "Parse JSON structure properly.",
-  "main": "parsfy.deploy.js",
-  "support": "parsfy.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "parse",
-    "json",
-    "structure",
-    "properly",
-    "parsfy"
-  ],
-  "homepage": "https://github.com/volkovasystems/parsfy",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.23.0",
-    "circular-json": "^0.3.3",
-    "protype": "^0.24.0"
-  }
+	"name": "parsfy",
+	"version": "0.2.0",
+	"description": "Parse JSON structure properly.",
+	"main": "parsfy.deploy.js",
+	"support": "parsfy.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"parse",
+		"json",
+		"structure",
+		"properly",
+		"parsfy"
+	],
+	"homepage": "https://github.com/volkovasystems/parsfy",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"falzy": "^0.23.0",
+		"circular-json": "^0.3.3",
+		"protype": "^0.24.0"
+	}
 }

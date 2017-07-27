@@ -36,7 +36,8 @@
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/parsfy.git",
 			"test": "parsfy-test.js",
@@ -77,7 +78,7 @@ const parsfy = function parsfy( text, reviver ){
 	if( falzy( text ) || !protype( text, BOOLEAN + NUMBER + STRING + SYMBOL ) ){
 		throw new Error( "invalid entity" );
 	}
-
+	
 	return json.parse( text, reviver );
 };
 

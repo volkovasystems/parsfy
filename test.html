@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>parsfy unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:parsfy</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./parsfy.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "parsfy unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.deepEqual( parsfy( "{}" ), {}, "should be equal to {}" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.equal( parsfy( 1 ), 1, "should be equal to 1" );
-
-				assert.equal( parsfy( false ), false, "should be equal to false" );
-
-				assert.deepEqual( parsfy( JSON.stringify( { "hello": "world" } ) ),
-					{ "hello": "world" }, "should be equal to { 'hello': 'world' }" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
